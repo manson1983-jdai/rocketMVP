@@ -18,6 +18,7 @@ docker pull tequiladj/node4:v0.0.8
 
 ## 运行docker镜像
 docker network rm rocket
+
 docker network create rocket
 
 docker run -dit -p 8888:80 -p 8101:8101 --network=rocket --name node1 --privileged=true tequiladj/node1:v0.0.8 
