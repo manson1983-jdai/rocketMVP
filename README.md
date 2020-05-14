@@ -1,5 +1,8 @@
 # rocketMVP
-## 下载docker镜像
+## 0 安装docker客户端
+推荐版本 docker CE 18.09.3
+
+## 1 下载docker镜像
 docker pull tequiladj/node1:v0.0.8
 
 docker pull tequiladj/node2:v0.0.8
@@ -8,7 +11,7 @@ docker pull tequiladj/node3:v0.0.8
 
 docker pull tequiladj/node4:v0.0.8
 
-## 检查是否下载完整 
+## 2 检查是否下载完整 
 使用命令docker images，观察是否存在以下四个镜像文件：
 - tequiladj/node1:v0.0.8
 - tequiladj/node2:v0.0.8
@@ -16,7 +19,7 @@ docker pull tequiladj/node4:v0.0.8
 - tequiladj/node4:v0.0.8
   
 
-## 运行docker镜像
+## 3 运行docker镜像
 docker network rm rocket
 
 docker network create rocket
