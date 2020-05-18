@@ -2,7 +2,7 @@
 ## 0 安装docker客户端
 推荐版本 docker CE 18.09.3
 
-## 1 下载docker镜像
+## 1 下载节点镜像
 docker pull tequiladj/node1:v0.0.8
 
 docker pull tequiladj/node2:v0.0.8
