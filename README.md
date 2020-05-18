@@ -19,7 +19,7 @@ docker pull tequiladj/node4:v0.0.8
 - tequiladj/node4:v0.0.8
   
 
-## 3 运行docker镜像
+## 3 启动rocket网络
 docker network rm rocket
 
 docker network create rocket
@@ -35,3 +35,12 @@ docker run -dit -p 8104:8104 --network=rocket --name node4 --privileged=true teq
 
 在浏览器中打开http://0.0.0.0:8104/，
 即可观察到出块情况
+
+## 4 停止rocket网络
+docker stop node1
+
+docker stop node2
+
+docker stop node3
+
+docker stop node4
